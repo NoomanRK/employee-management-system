@@ -476,17 +476,19 @@ http://localhost:5173
 
 Application screenshots will be added here.
 
-
+## Screenshots
 
 ### Login Page
-![Login Page](screenshots/login.png)
+
+![Login Page](./screenshots/login.png)
 
 ### Employee Dashboard
-![Employee Dashboard](screenshots/dashboard.png)
+
+![Employee Dashboard](./screenshots/dashboard.png)
 
 ### Department Distribution
-![Department Distribution](screenshots/department-distribution.png)
 
+![Department Distribution](./screenshots/department-distribution.png)
 
 \## Security Considerations
 
