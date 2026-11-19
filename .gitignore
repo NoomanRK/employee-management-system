@@ -1,0 +1,31 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+application-local.properties
+application-prod.properties
+application-secret.properties
+
+# Java / Spring Boot
+**/target/
+**/bin/
+*.class
+*.log
+
+# Node / React
+**/node_modules/
+**/dist/
+**/.vite/
+
+# IDE and operating system
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Local configuration
+*.local
+
+# Private environment and secrets file
+Environment variables and secrets.txt

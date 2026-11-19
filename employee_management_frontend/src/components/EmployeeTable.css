@@ -1,0 +1,163 @@
+
+/* Employee Table Container */
+.employee-table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 25px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+}
+
+/* Table */
+.employee-table {
+    width: 100%;
+    min-width: 900px;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #334155;
+}
+
+/* Table Header */
+.employee-table thead {
+    background: #f8fafc;
+}
+
+.employee-table th {
+    padding: 17px 18px;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 600;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    white-space: nowrap;
+    border-bottom: 1px solid #e5e7eb;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.employee-table th:hover {
+    background: #f1f5f9;
+    color: #2563eb;
+}
+
+.employee-table th:last-child {
+    cursor: default;
+}
+
+.employee-table th:last-child:hover {
+    background: #f8fafc;
+}
+
+/* Table Rows */
+.employee-table tbody tr {
+    background: #ffffff;
+    transition: background 0.2s ease;
+}
+
+.employee-table tbody tr:hover {
+    background: #f8fafc;
+}
+
+/* Table Cells */
+.employee-table td {
+    padding: 18px;
+    border-bottom: 1px solid #f1f5f9;
+    white-space: nowrap;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #475569;
+}
+
+/* Employee ID */
+.employee-table td:first-child {
+    font-weight: 600;
+    color: #64748b;
+}
+
+/* Employee Name */
+.employee-table td:nth-child(2) {
+    font-weight: 600;
+    color: #1e293b;
+}
+
+/* Email */
+.employee-table td:nth-child(3) {
+    color: #64748b;
+}
+
+/* Salary */
+.employee-table td:nth-child(7) {
+    font-weight: 600;
+    color: #1e293b;
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Edit Button */
+.edit-button {
+    padding: 7px 14px;
+    border: 1px solid #2563eb;
+    border-radius: 6px;
+    background: #eff6ff;
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.edit-button:hover {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+/* Delete Button */
+.delete-button {
+    padding: 7px 14px;
+    border: 1px solid #dc2626;
+    border-radius: 6px;
+    background: #fef2f2;
+    color: #dc2626;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.delete-button:hover:not(:disabled) {
+    background: #dc2626;
+    color: #ffffff;
+}
+
+.delete-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Last Row */
+.employee-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .employee-table-container {
+        margin-top: 18px;
+        border-radius: 8px;
+    }
+
+    .employee-table th,
+    .employee-table td {
+        padding: 13px 14px;
+    }
+}
